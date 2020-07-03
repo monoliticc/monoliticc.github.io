@@ -13,8 +13,8 @@
 
 		CurrentURL	= window.location.href,
 		CurrentPath	= window.location.pathname,
-		BaseHost	= "monoliticc.github.io/monoliticc",
-		BaseURL		= "https://monoliticc.github.io/monoliticc/";
+		BaseHost	= "monoliticc.github.io/",
+		BaseURL		= "https://monoliticc.github.io/";
 
 //	LOCALHOST — GLOBAL VARIABLES
 //	if (BaseHost != window.location.host) {
