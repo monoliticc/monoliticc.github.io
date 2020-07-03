@@ -1,0 +1,21 @@
+<!-- <main> -->
+
+<div class="ROW900">
+	<div class="COL900">
+		<div class="centralize">
+			<div class="circle indigo"></div>
+			<div class="circle cyan"></div>
+			<div class="circle neutral"></div>
+			<div class="circle yellow"></div>
+			<div class="circle red"></div>
+		</div>
+	</div>
+</div>
+
+<div class="ROW900">
+	<div class="COL100 mobile-nope"></div>
+	<div class="COL700 post"></div>
+	<div class="COL100 mobile-nope"></div>
+</div>
+
+<!-- </main> -->

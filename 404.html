@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<style>header,main,footer{display:none;}body{font-family:sans-serif;}</style>
+	<script src="https://monoliti.cc/base/js/jquery-min.js"></script>
+
+	<script>
+	// 404 EXCLUSIVE CASE — JS FILE SELECTOR — DEPLOYED APP || LOCALHOST APP
+	$(document).ready(function(){
+		if ("monoliti.cc" == window.location.host) {
+			$("head").append("<script src='https://monoliti.cc/base/js/monoliticc-app.js'>");
+		} else {
+			$("head").append("<script src='base/js/monoliticc-app.js'>");
+		};
+	});
+	</script>
+</head>
+
+<body>
+
+	<header>
+	</header>
+
+
+	<main>
+		<article>
+			<h1 id="erro-404">Erro 404: A página não existe</h1>
+			<h2>“ I’m sorry, Dave. I’m afraid I can’t do that ”</h2>
+
+			<p>O endereço digitado não corresponde a nenhuma página existente. A partir daqui você tem três opções:</p>
+			<p><strong>Opção 1:</strong> Voltar à página inicial do site, <a href="https://monoliti.cc">clicando aqui</a>. 
+			<br>
+			<strong>Opção 2:</strong> Utilizar o campo de busca pra tentar a sorte grande e ver se encontra àquilo que procurava.
+			<br>
+			<strong>Opção 3:</strong> Fechar o site, desligar a internet e ir desbravar o mundo lá fora... viajar a outros países... outros planetas... só não se esqueça de contar sobre o Monoliti.cc aos seres de outras galáxias, ok? Vlw, flw.</p>
+		</article>
+	</main>
+
+
+	<footer>
+	</footer>
+
+	<noscript>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<h1>Habilite o JavaScript do seu navegador.</h1>
+	</noscript>
+
+</body>
+
+</html>

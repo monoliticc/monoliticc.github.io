@@ -1,0 +1,36 @@
+CACHE MANIFEST
+# 2018-09-26
+
+CACHE:
+base/font/barlow-condensed-600.woff
+base/font/barlow-condensed-700.woff
+base/font/overpass-300.woff
+base/font/overpass-300i.woff
+base/font/overpass-700.woff
+base/css/row900.css
+base/css/monoliticc-font.css
+base/css/monoliticc-style-dark.css
+base/css/monoliticc-style-light.css
+base/font/maax-rounded-500.woff
+base/global/header.txt
+base/global/main.txt
+base/global/footer.txt
+base/img/menu-close.svg
+base/img/menu-open.svg
+base/img/monoliticc-logo.svg
+base/img/mountains-left.svg
+base/img/mountains-right.svg
+base/img/search-magnifier.svg
+base/img/grain-background.png
+base/js/jquery-min.js
+base/js/monoliticc-app.js
+index.html
+404.html
+info/sobre
+texto/
+
+NETWORK:
+index.html
+podcast/
+video/
+texto/

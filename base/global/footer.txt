@@ -1,0 +1,38 @@
+﻿<!-- <footer> -->
+
+<div class="ROW900">
+	<nav class="COL300 mobile-nope">
+		<h3>Sobre</h3>
+		<ul>
+			<li><a href="https://monoliti.cc/info/sobre">Objetivo</a></li>
+			<li><a href="https://monoliti.cc/info/sobre#equipe">Equipe</a></li>
+			<li><a href="https://monoliti.cc/info/contato">Contato</a></li>
+		</ul>
+	</nav>
+	<nav class="COL300">
+		<h3>Assinatura</h3>
+		<ul>
+			<li><a href="https://monoliti.cc/info/assinatura">Como Funciona</a></li>
+			<li><a href="https://monoliti.cc/info/assinatura#vantagens">Conteúdo Exclusivo</a></li>
+			<li><a href="https://monoliti.cc/info/assinatura#calendario">Calendário de Publicações</a></li>
+		</ul>
+	</nav>
+	<nav class="COL300">
+		<h3>Feed RSS</h3>
+		<ul>
+			<li><a target="_blank" href="https://monoliti.cc/feed/podcast.xml">Podcast</a></li>
+			<li><a target="_blank" href="https://monoliti.cc/feed/video.xml">Vídeos</a></li>
+			<li><a target="_blank" href="https://monoliti.cc/feed/texto.xml">Textos</a></li>
+		</ul>
+	</nav>
+</div>
+<div class="ROW900">
+	<div class="COL200 mobile-nope"></div>
+	<div class="COL500">
+		<h3>Monoliti.cc <span class="dot">•</span><span class="copyright"> © </span><span class="dot">•</span> Desde 2018</h3>
+		<p>Partes de obras artísticas e culturais, veiculadas ilustrativamente neste site, são marcas registradas de seus respectivos proprietários.</p>
+	</div>
+	<div class="COL200 mobile-nope"></div>
+</div>
+
+<!-- </footer> -->

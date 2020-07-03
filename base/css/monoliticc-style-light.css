@@ -1,0 +1,46 @@
+/*LIGHT BACKGROUND*/
+body {
+	background-image:
+						linear-gradient(to bottom, #112, #112 100%),
+						linear-gradient(to bottom, #FFF, #FFF 100%);
+	background-size:	100% 650px, 100% auto;
+	background-repeat:	repeat-x, repeat-x;
+	background-position:0 0, 0 0;
+	background: #FFF;
+	}
+
+.searchBoxInput			{background: #CCC;}
+.searchBoxInput:hover	{background: #DDD;}
+.searchBoxInput:focus	{background: #DDD;}
+
+.neutral		{background-color: #123;}
+main h1			{color: #123; text-shadow: 0px 0px 0px #123;}
+main h1 a		{color: #123; text-shadow: 0px 0px 0px #123;}
+main h1 a:hover	{color: #567; text-decoration: none;}
+
+main h2			{color: #456; text-shadow: 0px 0px 0px #456;}
+main h3			{color: #123; text-shadow: 0px 0px 0px #345;}
+
+main p			{font-weight: 300; color: #000; text-shadow: 0px 0px 0px #999;}
+main p a		{color: #000; border-bottom: 3px solid #6CC; box-shadow: #6CC 0px -1px 0px 0px inset;}
+main p a:hover	{color: #000; box-shadow: #6CC 0px -30px 0px 0px inset; text-shadow: 0px 0px 0px #000;}
+
+main b,strong	{color: #000; text-shadow: 0 0 0 #000;}
+
+main figure		{background: #BCD; border: 5px solid #BCD;}
+main figcaption	{background: #BCD; border: 5px solid #BCD; color: #000;}
+
+main blockquote p		{color: #123; text-shadow: 0px 0px 0px #345;}
+main blockquote:before 	{color: #123;}
+main blockquote:after 	{color: #789;}
+main blockquote span	{color: #678;}
+
+main address	{color: #456; text-shadow: 0px 0px 0px #456;}
+main time		{color: #123; text-shadow: 0px 0px 0px #345;}
+
+footer	{background-image:
+							url(../img/grain-background.png),
+							linear-gradient(to right, #345, #345 100%),
+							linear-gradient(to right, #313, #313 100%);}
+
+@-moz-document url-prefix() {h1,h2,h3,p,b,strong,address,time {text-shadow: none;}}

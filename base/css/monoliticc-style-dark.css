@@ -1,0 +1,485 @@
+
+::selection			{color: #FFF; background:rgba(51, 51, 153, 0.998);}
+::-moz-selection	{color: #FFF; background: #339;}
+
+header,main,footer	{display: block;}
+.mobile-yep			{display: none;}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: "Overpass", sans-serif;
+	background: #112;
+	overflow-x: hidden;
+	}
+
+header {
+	width: 100%;
+	height: 334px;
+	margin: 0;
+	background-image:
+						url(../img/grain-background.png),
+						url(../img/mountains-left.svg),
+						url(../img/mountains-right.svg),
+						linear-gradient(to bottom, #069 0%, #399 58%, #9A9 102%),
+						linear-gradient(to right, #733, #733 100%),
+						linear-gradient(to right, #313, #313 100%);
+	background-size:	auto, 700px 304px, 700px 304px, 100% 304px, 100% 15px, 100% 20px;
+	background-repeat:	repeat, no-repeat, no-repeat, repeat-x, repeat-x, repeat-x;
+	background-position: 0 0, 0 0, right 0, 0 0, 0 304px, 0 318px;
+	}
+
+.monoliticc-logo {
+	width: 222px;
+	height: 274px;
+	margin: 20px auto 10px auto;
+	background-image: url(../img/monoliticc-logo.svg);
+	}
+
+.monoliticc-logo-link {
+	display: block;
+	width: 108px;
+	height: 274px;
+	margin: 0 auto;
+	}
+
+.menu-left,
+.menu-right		{margin-top: 30px; list-style: none;}
+
+.menu-left ul	{text-align: left;}
+.menu-right ul	{text-align: right;}
+
+.menu-left ul li, 
+.menu-right ul li {
+	font-family: "Barlow Condensed", "Trebuchet MS", sans-serif;
+	font-size: 33px;
+	font-weight: 600;
+	color: #123;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	display: inline;
+	list-style: none;
+	}
+
+.menu-left ul li	{margin-right: 20px;}
+.menu-right ul li	{margin-left: 20px;}
+
+.menu-left ul li a, .menu-right ul li a				{color: #123; text-decoration: none;}
+.menu-left ul li a:hover, .menu-right ul li a:hover	{color: #6CC; text-decoration: none;}
+
+.menu-button	{display: none;}
+
+#searchForm		{height: 60px; margin: 40px 0 0 0;}
+
+.searchBoxInput {
+	width: 100%;
+	height: 60px;
+	font-family: "Barlow Condensed", "Trebuchet MS", sans-serif;
+	font-size: 35px;
+	font-weight: 600;
+	text-align: center;
+	color: #112;
+	letter-spacing: -1px;
+	float: left;
+	padding: 0px 60px;
+	margin-top: 0px;
+	box-sizing: border-box;
+	border-radius: 200px;
+	border: none;
+	background: #234;
+	}
+
+.searchBoxButton {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin: 15px 0px 0px -50px;
+	padding: 0px;
+	border: 0px;
+	background-image: url(../img/search-magnifier.svg);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	}
+
+.searchBoxInput:hover {background-color: #345;}
+
+.searchBoxInput:focus {
+	color: #112;
+	background-color: #EEE;
+	}
+
+.highlights {
+	max-width: 100%;
+	height: 400px;
+	}
+
+.circle {
+	min-width:  28px; max-width:  28px;
+	min-height: 28px; max-height: 28px;
+	margin: 40px 5px 30px 5px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: #bbb;
+	}
+
+.indigo	{background-color: #339;}
+.cyan	{background-color: #6CC;}
+.neutral{background-color: #EEE;}
+.yellow	{background-color: #F95;}
+.red	{background-color: #902;}
+
+main {
+	min-height: calc(100vh - 534px); /* 534PX = HEADER HEIGHT + FOOTER HEIGHT */
+	overflow-x: hidden;
+	}
+
+main h1 {
+	font-family: "Barlow Condensed", "Trebuchet MS", sans-serif;
+	font-size: 52.8px;
+	font-weight: 700;
+	letter-spacing: 0px;
+	word-spacing: 1px;
+	line-height: 60px;
+	color: #567;
+	text-shadow: 0px 0px 0px #789;
+	text-align: center;
+	font-variant-ligatures: none;
+	text-rendering: optimizeSpeed !important;
+	text-transform: uppercase;
+	overflow-y: hidden;
+	}
+
+main h1 a		{color: #567; text-decoration: none; text-shadow: 0px 0px 0px #789;}
+main h1 a:hover	{color: #EEE; text-decoration: none; text-shadow: none;}
+
+main h2 {
+	font-family: "Maax Rounded", "Overpass", sans-serif;
+	font-size: 34px;
+	font-weight: 500;
+	letter-spacing: -2px;
+	word-spacing: -1px;
+	color: #345;
+	text-shadow: 0px 0px 0px #345;
+	text-align: center;
+	font-variant-ligatures: none;
+	line-height: 38px;
+	margin: 20px 0px 20px 0px;
+	}
+
+main h3 {
+	font-family: "Barlow Condensed", "Trebuchet MS", sans-serif;
+	font-size: 33px;
+	font-weight: 600;
+	letter-spacing: -0.2px;
+	word-spacing: 0.5px;
+	color: #567;
+	text-shadow: 0px 0px 0px #567;
+	font-variant-ligatures: none;
+	margin-bottom: 10px;
+	}
+
+main figure {
+	width: 100%;
+	margin: 30px auto 40px auto;
+	background: #223;
+	border: 5px solid #223;
+	}
+
+main figcaption {
+	font-family: "Overpass", sans-serif;
+	font-size: 22px;
+	font-weight: 300;
+	color: #BCD;
+	letter-spacing: -1px;
+	word-spacing: 0.5px;
+	text-align: left;
+	line-height: 1.4em;
+	font-variant-ligatures: none;
+	margin-top: -2px;
+	padding: 12px 10px 0px 10px;
+	border: 4px solid #223;
+	background: #223;
+	}
+
+main figure img {
+	width: 100%;
+	margin: 0 auto;
+	}
+
+main p {
+	font-family: "Overpass", sans-serif;
+	font-size: 22px;
+	font-weight: 300;
+	color: #9AB;
+	letter-spacing: -1px;
+	word-spacing: 0.5px;
+	text-align: left;
+	line-height: 1.4em;
+	font-variant-ligatures: none;
+	/*margin: 0px 10px 30px 10px;*/
+	margin-bottom: 30px;
+	}
+
+main p a {
+	color: #BCD;
+	text-decoration: none;
+	padding-top: 4px;
+	border-bottom: 3px solid #902;
+	box-shadow: #902 0px -1px 0px 0px inset;
+	}
+
+main p a:hover {
+	color: #FFF;
+	box-shadow: #902 0px -30px 0px 0px inset;
+	}
+
+main b,strong {
+	color: #BCD;
+	font-weight: 700;
+	letter-spacing: -0.5px;
+	}
+
+main audio {
+	width: 100%;
+	margin: 0px auto 10px auto;
+	}
+
+main blockquote {
+	width: 80%;
+	display: block;
+	margin: 50px auto;
+	position: relative;
+	}
+
+main blockquote p {
+	font-family: "Maax Rounded", "Overpass", sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	color: #BCD;			
+	letter-spacing: -1.5px;
+	word-spacing: -0.25px;
+	font-style: normal;
+	text-align: center;
+	font-variant-ligatures: none;
+	line-height: 35px;
+	padding: 0 10%;
+	}
+
+main blockquote span {
+	font-family: "Maax Rounded", "Overpass", sans-serif;
+	font-size: 27.5px;
+	font-weight: 500;
+	color: #345;
+	letter-spacing: -2px;
+	word-spacing: -0.25px;
+	text-align: center;
+	margin-top: 20px;
+	display: block;
+	}
+
+main blockquote span:before {content: "\2014 \2002";}
+
+main blockquote:before {
+	content: "\201C";
+	font-family: "Overpass", sans-serif;
+	font-size: 138px;
+	font-weight: 700;
+	color: #345;
+	text-align: center;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 55px;
+	left: 3%;
+	}
+
+main blockquote:after {
+	content: "\201D";
+	width: 80%;
+	font-family: "Overpass", sans-serif;
+	font-size: 138px;
+	font-weight: 700;
+	color: #567;
+	text-align: right;
+	margin-top: -60px;
+	position: absolute;
+	right: -1%;
+	display: block;
+	}
+
+main address {
+	font-family: "Barlow Condensed", sans-serif;
+	font-size: 34.5px;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: -0.5px;
+	color: #567;
+	text-align: right;
+	margin-top: 30px;
+	}
+
+main time {
+	font-family: "Maax Rounded", "Overpass", sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	color: #345;
+	letter-spacing: -1.5px;
+	word-spacing: -0.5px;
+	font-variant-ligatures: none;
+	text-align: right;
+	display: block;
+	}
+
+main time ins {
+	/*font-family: "Barlow Condensed", "Overpass", sans-serif;*/
+	font-size: 24px;
+	/*font-weight: 300;*/
+	text-decoration: none;
+	text-align: right;
+	display: block;
+	}
+
+.centralize {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+footer {
+	width: 100%;
+	min-height: 200px;
+	margin: 50px 0px 0px 0px;
+	padding: 60px 0px 30px 0px;
+	clear: both;
+	background-image:
+						url(../img/grain-background.png),
+						linear-gradient(to right, #223, #223 100%),
+						linear-gradient(to right, #313, #313 100%);
+	background-size:	auto, 100% 15px, 100% 100%;
+	background-repeat: repeat, repeat-x, repeat-x;
+	background-position: 0 0, 0 0, 0 0;
+	}
+
+footer nav {margin-bottom: 40px;}
+
+footer h3	{
+			font-family: "Barlow Condensed", "Trebuchet MS", sans-serif;
+			font-size: 33px;
+			font-weight: 600;
+			color: #F95;
+			letter-spacing: -0.2px;
+			word-spacing: 0.5px;
+			text-align: center;
+			font-variant-ligatures: none;
+			text-transform: uppercase;
+			list-style: none;
+			}
+
+footer ul li {
+	font-size: 21px;
+	font-weight: 300;
+	color: #EEE;
+	letter-spacing: -1px;
+	word-spacing: 2px;
+	text-align: center;
+	font-variant-ligatures: none;
+	margin-top: 15px;
+	list-style: none;
+	}
+
+footer ul li a {
+	color: #EEE;
+	text-decoration: none;
+	}
+
+footer ul li a:hover {
+	color: #F95;}
+
+footer .dot			{color: #902;}
+footer .copyright	{color: #EEE;}
+
+footer p{
+	font-size: 16px;
+	text-align: center;
+	color: #EEE;
+	letter-spacing: -0.25px;
+	margin-top: 0px;
+	padding: 10px 10px 0px 10px;
+	}
+
+.TEST {
+	min-height: 40px;
+	margin-top: 20px;
+	/*margin-bottom: 10px;*/
+	background: gold;
+	background: #123;
+	/*background: transparent;*/
+	}
+
+.menu-left li a, .menu-right li a, main h1 a, article p a, footer ul li a {
+	transition: all 0.30s ease-in-out;
+	}
+
+
+/* SCREEN SIZE 0PX TO 980PX */
+@media only screen and (min-width: 1px) and (max-width: 980px) {
+
+	header {background-position: 0 0, -480px 0, 150px 0, 0 0, 0 304px, 0 318px; position: relative;}
+
+	.monoliticc-logo {margin: -11px auto 10px auto;}
+
+	.menu-left ul		{/*position: absolute; top: 31px; left:  10px;*/ display: none;}
+	.menu-right ul		{/*position: absolute; top: 31px; right: 10px;*/ display: none;}
+
+	.menu-left ul li, 
+	.menu-right ul li	{display: block; font-size: 30px; margin-bottom: 5px;}
+
+	.menu-button		{position: absolute; top: 19px; right: 21px; display: inline;}
+	
+	main 	 		{overflow-x: hidden;}
+
+	.post			{width: calc(100% - 20px); padding: 0px 10px 0px 10px; overflow-x: hidden;}
+	
+	main h1			{font-size: 42.9px; line-height: 45px; text-align: left; text-shadow: none;}
+
+	main h2			{font-size: 29.5px; line-height: 35px; text-align: left;text-shadow: none;}
+	
+	main p 			{font-size: 21px;}
+
+	main figure		{width: calc(100% + 20px); border: none; margin-left: -10px;}
+	main figure img	{border: none;}
+	main figcaption	{font-size: 21px; padding: 10px 10px 5px 10px;}
+	
+	main address	{font-size: 31px; margin-top: 35px; margin-right: 20px;}
+	main time		{font-size: 26.5px; margin-right: 20px;}
+
+	main blockquote			{margin: 35px auto;}
+	main blockquote:before, 
+	main blockquote:after	{font-size: 115px;}
+	main blockquote p		{font-size: 26.5px; padding: 0 10%; line-height: 30px;}
+	main blockquote span	{font-size: 25px; text-align: left;}
+
+	#searchForm {width: 90%; margin: 20px auto 0px auto;}
+
+	.mobile-nope	{display: none;}
+	.mobile-yep		{display: inline-block;}
+
+}
+
+
+/* SCREEN SIZE 760PX TO 980PX */
+@media only screen and (min-width: 760px) and (max-width: 980px) {
+
+	header {background-position: 0 0, -220px 0, 440px 0, 0 0, 0 304px, 0 318px;}
+	footer .ROW900		{width: 758px; margin-left: auto; margin-right: auto;}
+	footer .COL300		{width: 226px; margin-left: 20px;}
+	footer .mobile-nope {display: inline-block;}
+
+}
+
+
+/* SCREEN SIZE 980PX TO 1280PX */
+@media only screen and (min-width: 980px) and (max-width: 1280px) {
+
+	header {background-position: 0 0, -170px 0, 144% 0, 0 0, 0 304px, 0 318px;}
+
+}

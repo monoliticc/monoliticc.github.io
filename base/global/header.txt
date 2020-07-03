@@ -1,0 +1,29 @@
+<!-- <header> -->
+
+<div class="ROW900">
+	<div class="COL300 menu-left">
+		<ul>
+			<li><a href="https://monoliti.cc">Início</a></li>
+			<li><a href="https://monoliti.cc/info/contato">Contato</a></li>
+			<li><a href="https://monoliti.cc/info/assinatura">Assine</a></li>
+		</ul>
+	</div>
+	<div class="COL300">
+		<div class="monoliticc-logo centralize">
+			<a class="monoliticc-logo-link" href="https://monoliti.cc"></a>
+		</div>
+	</div>
+	<div class="COL300 menu-right">
+		<ul>
+			<li><a href="https://monoliti.cc/podcast/">Podcast</a></li>
+			<li><a href="https://monoliti.cc/video/">YouTube</a></li>
+			<li><a href="https://monoliti.cc/texto/">Textos</a></li>
+		</ul>
+		<a class="menu-button" href="#">
+			<img src="https://monoliti.cc/base/img/menu-open.svg" alt="Botão para exibir menu oculto do topo."/>
+			<!-- <img src="base/img/menu-close.svg" alt="Botão para exibir menu oculto do topo."/> -->
+		</a>
+	</div>
+</div>
+
+<!-- </header> -->
