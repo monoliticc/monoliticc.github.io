@@ -43,7 +43,8 @@ $(document).ready(function(){
 	$("html").prop("lang", "pt-BR");
 	// $("html").attr("manifest", BaseURL+"monoliticc.appcache");
 	$("head").append("<meta name='theme-color' content='#112'>");
-	$("head").append("<meta name='viewport' content='width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0'>");
+	// $("head").append("<meta name='viewport' content='width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0'>");
+	   $("head").append("<meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0'>");
 	$("head").append("<link rel='stylesheet' href='"+BaseURL+"base/css/monoliticc-font.css'>");
 	$("head").append("<link rel='stylesheet' href='"+BaseURL+"base/css/row900.css'>");
 	$("head").append("<link rel='stylesheet' href='"+BaseURL+"base/css/monoliticc-style-dark.css'>");	
