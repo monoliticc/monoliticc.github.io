@@ -199,21 +199,21 @@ $(document).ajaxStop(function() {
 	// $("span").find("h1").unwrap();
 
 //	FACEBOOK OPEN GRAPH
-if (CurrentURL.includes("texto")) {
-	$("head").append(
-		"<meta property='og:locale' content='pt_BR'/>" +
-		"<meta property='og:site_name' content='One, Two, Testando'/>" + 
-		"<meta property='og:title' content='Aqui deveria ter o H1 da Página'/>" + 
-		"<meta property='og:url' content='"+CurrentURL+"'/>" + 
-		"<meta property='og:type' content='article'/>" + 
-		"<meta property='og:description' content='"+PostDescription+"'/>" + 
-		"<meta property='og:image' content='https://bolapresa.com.br/wp-content/uploads/2020/08/michael-porter-jr-vs-okc.jpg'/>" + 
-		"<meta property='article:published_time' content='2020-08-14T02:16:53+00:00'/>" + 
-		"<meta property='article:modified_time' content='2020-08-14T02:19:07+00:00' />" + 
-		"<meta property='og:updated_time' content='2020-08-14T02:19:07+00:00' />" + 
-		"<meta property='article:section' content='Classic'/>"
-	);
-};
+	if (CurrentURL.includes("texto")) {
+		$("head").append(
+			"<meta property='og:locale' content='pt_BR'/>" +
+			"<meta property='og:site_name' content='One, Two, Testando'/>" + 
+			"<meta property='og:title' content='Aqui deveria ter o H1 da Página'/>" + 
+			"<meta property='og:url' content='"+CurrentURL+"'/>" + 
+			"<meta property='og:type' content='article'/>" + 
+			"<meta property='og:description' content='"+PostDescription+"'/>" + 
+			"<meta property='og:image' content='https://bolapresa.com.br/wp-content/uploads/2020/08/michael-porter-jr-vs-okc.jpg'/>" + 
+			"<meta property='article:published_time' content='2020-08-14T02:16:53+00:00'/>" + 
+			"<meta property='article:modified_time' content='2020-08-14T02:19:07+00:00' />" + 
+			"<meta property='og:updated_time' content='2020-08-14T02:19:07+00:00' />" + 
+			"<meta property='article:section' content='Classic'/>"
+		);
+	};
 
 // 	SHOW PAGE AFTER ALL LOADINGS
 	setTimeout(function() {
