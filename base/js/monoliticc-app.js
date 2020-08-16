@@ -17,9 +17,9 @@
 		BaseURL		= "https://monoliticc.github.io/";
 
 //	LOCALHOST — GLOBAL VARIABLES
-	if (BaseHost != window.location.host) {
-		BaseURL = "http://localhost:8000/";
-	};
+	// if (BaseHost != window.location.host) {
+	// 	BaseURL = "http://localhost:8000/";
+	// };
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
