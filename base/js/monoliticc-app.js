@@ -17,9 +17,9 @@
 		BaseURL		= "https://monoliticc.github.io/";
 
 //	LOCALHOST — GLOBAL VARIABLES
-//	if (BaseHost != window.location.host) {
-//		BaseURL = "http://localhost/monoliticc/";
-//	};
+	if (BaseHost != window.location.host) {
+		BaseURL = "http://localhost:8000/";
+	};
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43,8 +43,7 @@ $(document).ready(function(){
 	$("html").prop("lang", "pt-BR");
 	// $("html").attr("manifest", BaseURL+"monoliticc.appcache");
 	$("head").append("<meta name='theme-color' content='#112'>");
-	// $("head").append("<meta name='viewport' content='width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0'>");
-	   $("head").append("<meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0'>");
+	$("head").append("<meta name='viewport' content='width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0'>");
 	$("head").append("<link rel='stylesheet' href='"+BaseURL+"base/css/monoliticc-font.css'>");
 	$("head").append("<link rel='stylesheet' href='"+BaseURL+"base/css/row900.css'>");
 	$("head").append("<link rel='stylesheet' href='"+BaseURL+"base/css/monoliticc-style-dark.css'>");	
@@ -198,6 +197,23 @@ $(document).ajaxStop(function() {
 //	EXCLUDE SPAN USED ON GLOBAL LOADINGS
 	$("span").find(".ROW900").unwrap();
 	// $("span").find("h1").unwrap();
+
+//	FACEBOOK OPEN GRAPH
+if (CurrentURL.includes("texto")) {
+	$("head").append(
+		"<meta property='og:locale' content='pt_BR'/>" +
+		"<meta property='og:site_name' content='One, Two, Testando'/>" + 
+		"<meta property='og:title' content='Aqui deveria ter o H1 da Página'/>" + 
+		"<meta property='og:url' content='"+CurrentURL+"'/>" + 
+		"<meta property='og:type' content='article'/>" + 
+		"<meta property='og:description' content='"+PostDescription+"'/>" + 
+		"<meta property='og:image' content='https://bolapresa.com.br/wp-content/uploads/2020/08/michael-porter-jr-vs-okc.jpg'/>" + 
+		"<meta property='article:published_time' content='2020-08-14T02:16:53+00:00'/>" + 
+		"<meta property='article:modified_time' content='2020-08-14T02:19:07+00:00' />" + 
+		"<meta property='og:updated_time' content='2020-08-14T02:19:07+00:00' />" + 
+		"<meta property='article:section' content='Classic'/>"
+	);
+};
 
 // 	SHOW PAGE AFTER ALL LOADINGS
 	setTimeout(function() {
